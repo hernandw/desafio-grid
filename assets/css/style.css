@@ -1,103 +1,101 @@
 :root {
-	--blue: #25527B;
-	--white: #fff;
-	--black: #000;
-	--gray: #E7E7E7;
-	--gray-oscuro: #9F9DA0;
+  --blue: #25527b;
+  --white: #fff;
+  --black: #000;
+  --gray: #e7e7e7;
+  --gray-oscuro: #9f9da0;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h3 {
-	font-weight: bold;
-	margin-bottom: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 span {
-	color: var(--gray-oscuro);
+  color: var(--gray-oscuro);
 }
 
 .container {
-	max-width: 1200px;
-	width: 90%;
-	margin: 30px auto;
-	background-color: var(--gray);
-	border: 1px solid var(--black);
-	display: grid;
-	grid-template-columns: 150px repeat(3, 1fr);
-	grid-template-rows: 100px 1fr 100px;
-grid-template-areas: 
-"header header header header"
-"aside products products products"
-"footer footer footer footer"
-;
-
+  max-width: 1200px;
+  width: 90%;
+  margin: 30px auto;
+  background-color: var(--gray);
+  border: 1px solid var(--black);
+  display: grid;
+  grid-template-columns: 150px repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header header header"
+    "aside products products products"
+    "footer footer footer footer";
 }
 
 .header {
-	grid-area: header;
-	background-color: var(--blue);
-	color: var(--white);
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 100px;
+  grid-area: header;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 100px;
 }
 
 .aside {
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .products {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-area: products;
-	gap: 30px;
-	padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: products;
+  gap: 30px;
+  padding: 30px;
 }
 
 .card {
-	background-color: var(--white);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 300px;
-	justify-content: space-between;
-	
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: space-between;
 }
 
 .card img {
-	width: 100%;
-	height: 200px;
+  width: 100%;
+  height: 200px;
 }
 
 button {
-	width: 100%;
-	background-color: var(--blue);
-	color: var(--white);
-	padding: 10px;
-	border: 1px solid var(--blue);
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px;
+  border: 1px solid var(--blue);
 }
 
 button:hover {
-	background-color: var(--gray-oscuro);
-	color: var(--white);
-	cursor: pointer;
+  background-color: var(--gray-oscuro);
+  color: var(--white);
+  cursor: pointer;
 }
 
 .footer {
-	grid-area: footer;
-	background-color: var(--white);
-	text-align: center;
-	line-height: 100px;
-	font-weight: bold;
+  grid-area: footer;
+  background-color: var(--white);
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
 }
